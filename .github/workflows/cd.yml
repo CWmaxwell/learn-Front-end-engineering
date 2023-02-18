@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      # https://github.com/semantic-release/git/issues/209
+      # https://github.com/semantic-release/git/issues/209,再次测试
       - run: npm ci --ignore-scripts
       - run: npm run build
       - run: npx semantic-release
